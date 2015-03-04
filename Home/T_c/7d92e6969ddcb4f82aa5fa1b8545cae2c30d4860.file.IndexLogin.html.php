@@ -1,22 +1,23 @@
-<?php /* Smarty version Smarty-3.0.7, created on 2015-03-02 15:38:24
+<?php /* Smarty version Smarty-3.0.7, created on 2015-03-04 09:48:14
          compiled from "Home/T/default/IndexLogin.html" */ ?>
-<?php /*%%SmartyHeaderCode:115708880654f41370ab3c94-55289508%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:30097842254f6645e136f90-88195312%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '7d92e6969ddcb4f82aa5fa1b8545cae2c30d4860' => 
     array (
       0 => 'Home/T/default/IndexLogin.html',
-      1 => 1425281883,
+      1 => 1425433606,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '115708880654f41370ab3c94-55289508',
+  'nocache_hash' => '30097842254f6645e136f90-88195312',
   'function' => 
   array (
   ),
   'has_nocache_code' => false,
 )); /*/%%SmartyHeaderCode%%*/?>
+<body>
 <div class='uk-vertical-align uk-text-center uk-height-1-1'>
   <div class='uk-vertical-align-middle' style='width:250px;'> 
     <h2 style='margin-top:20px;'>Gentai-Tables</h2>
@@ -34,3 +35,4 @@ $_smarty_tpl->decodeProperties(array (
 	</form>
   </div>
 </div>
+</body>
