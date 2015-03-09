@@ -5,7 +5,7 @@
 	<table class='uk-table uk-table-hover'>
 	{foreach $row as $val}
 	  <tr>
-	    <td><a href="index.php?vid={$val[id]}">{$val['customer_a']}{$val['customer_b']}</a></td>
+	    <td><a href="{$url}/vid/{$val.id}">{$val['customer_a']}{$val['customer_b']}</a></td>
 	  </tr>
 	{/foreach}
 	</table>

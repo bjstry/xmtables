@@ -34,11 +34,11 @@ class IndexC extends C{
 			}
 			$row=$protable->where($val)->order('id')->select();
 			if(session('id')==1){
-				 $addht="<a class='uk-button uk-button-primary' href='edit.php?id=0'>添加合同</a>";
+				 $addht="<a class='uk-button uk-button-primary' href=".$_SERVER['SCRIPT_NAME']."/Index/Add/id/0>添加合同</a>";
 			}
 	        $logout=" <a href='logout.php'>注销</a>";
 			$this->assign('title','Gentai-tables '.$well.'列表');
-			$this->assign('url',$_SERVER[SCRIPT_NAME].'/Index/Add');
+			$this->assign('url',$_SERVER['SCRIPT_NAME'].'/Index/Edit');
 			$this->assign('job',$well);
 			$this->assign('user',session('user'));
 			$this->assign('logout',$logout);
@@ -53,8 +53,22 @@ class IndexC extends C{
 		$this->assign('title','Gentai-Tables-登录');
 		$this->display();
 	}
+	function Edit(){
+		if(isset($_GET['vid'])){
+			$protables = M('Protables');
+			$row = $protables->where("id='$_GET[vid]'")->find();
+			if(is_null($row)){
+				echo '<script>alert(\'非法访问\');</script>';	
+			}else{
+				$this->assign('title','Gentai-Tables-添加');
+				$this->assign('row',$row);
+				$this->display();
+			}
+		}else{
+			echo '参数非法!';
+		}
+	}
 	function Add(){
-		$this->assign('title','Gentai-Tables-添加');
 		$this->display();
 	}
 	function LoginCheck(){
