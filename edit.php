@@ -1,4 +1,5 @@
 <?php
+
 	include_once('./lib/config.php');
 	$obj;
 	if(!$_GET['id']==0){

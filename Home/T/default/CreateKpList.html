@@ -1,0 +1,19 @@
+<body>
+<div class='uk-grid'>
+  <div class='uk-width-7-10 uk-container-center'>
+	<table class='uk-table uk-table-hover'>
+	  <tr>
+	    <td>开票日期</td><td>开票金额</td><td>发票寄送日期</td><td>发票寄送方式</td><td>操作</td>
+	  </tr>
+	  {foreach $srow as $val}
+	  <tr>
+	    <td>{$val['kdate'] }</td><td>{$val['kom'] }</td><td>{$val['fsdate'] }</td><td>{$val['fstype'] }</td><td><a class='uk-button uk-button-mini' href="edit.php?type=upd&e={$val[id] }" onclick=''>编辑</a></td>
+	  </tr>
+	  {/foreach}
+	  <tr>
+	    <td></td><td></td><td></td><td></td><td><a class='uk-button uk-button-primary uk-button-mini' href='edit.php?type=add'>添加</a></td>
+	  </tr>
+	</table>
+  </div>
+</div>
+</body>

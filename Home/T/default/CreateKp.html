@@ -1,0 +1,25 @@
+<body>
+	<div class='uk-grid'>
+		<div class='uk-widht-7-10 uk-container-center'>
+<h2>开票</h2>
+<form class='uk-form' action='create.php' method='post'>
+	开票日期:<input type='text' name='kdate' value="{$row['kdate']}"><br />
+	开票金额:<input type='text' name='kom'value="{$row['kom']}"><br>
+	发票寄送日期:<input type='text' name='fsdate'value="{$row['fsdate']}"><br>
+	发票寄送方式:<input type='text' name='fstype'value="{$row['fstype']}"><br>
+	<!--增值税额:<input type='text' name='vtax' value="{$obj['vtax']}"><br>
+	其他税额:<input type='text' name='othertax' value="{$obj['othertax']}"><br>
+	售前成本:<input type='text' name='salescost' value="{$obj['salescost']}"><br>
+	配件成本:<input type='text' name='accost' value="{$obj['accost']}"><br>
+	送货及安装成本:<input type='text' name='sentcost' value="{$obj['sentcost']}"><br>
+	相关人力成本:<input type='text' name='mancost' value="{$obj['mancost']}"><br>
+	总成本:<input type='text' name='cost' value="{$obj['cost']}"><br>-->
+	是否存为<abbr title="无法修改">最终</abbr>？<br>
+    <input type="radio" name="kpstatus" checked value=0 >否
+	<input type="radio" name="kpstatus" value=1 >是<br>
+	<input type='submit' name='create_kp' value='提交'><br>
+	<input type="button" name="Submit" onclick="javascript:history.back(-1);" value="返回">
+</form>
+</div>
+</div>
+</body>
