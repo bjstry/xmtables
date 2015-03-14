@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.7, created on 2015-03-12 09:44:14
+<?php /* Smarty version Smarty-3.0.7, created on 2015-03-14 10:08:55
          compiled from "Home/T/default/CreateHt.html" */ ?>
-<?php /*%%SmartyHeaderCode:6243357675500ef6ec73063-38719630%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:167433120755039837c96949-33278209%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '6de83be76169433df85306544d00655e8d7fb981' => 
     array (
       0 => 'Home/T/default/CreateHt.html',
-      1 => 1425632202,
+      1 => 1426298933,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '6243357675500ef6ec73063-38719630',
+  'nocache_hash' => '167433120755039837c96949-33278209',
   'function' => 
   array (
   ),
@@ -20,8 +20,7 @@ $_smarty_tpl->decodeProperties(array (
 <body>
 	<div class='uk-grid'>
 		<div class='uk-width-7-10 uk-container-center'>
-			<form class='uk-form uk-form-horizontal' action='<?php echo $_smarty_tpl->getVariable('url')->value;?>
-' method='post'>
+			<form class='uk-form uk-form-horizontal' action='/xmtables/index/EditCheck' method='post'>
 	<legend>合同</legend>
 	<div class='uk-form-row'>
 		<label class='uk-form-label' for='date' >建表日期</label>

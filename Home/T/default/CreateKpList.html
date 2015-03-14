@@ -7,11 +7,11 @@
 	  </tr>
 	  {foreach $srow as $val}
 	  <tr>
-	    <td>{$val['kdate'] }</td><td>{$val['kom'] }</td><td>{$val['fsdate'] }</td><td>{$val['fstype'] }</td><td><a class='uk-button uk-button-mini' href="edit.php?type=upd&e={$val[id] }" onclick=''>编辑</a></td>
+	    <td>{$val['kdate'] }</td><td>{$val['kom'] }</td><td>{$val['fsdate'] }</td><td>{$val['fstype'] }</td><td><a class='uk-button uk-button-mini' href="/xmtables/Index/Edit.html?type=upd&e={$val[id] }" onclick=''>编辑</a></td>
 	  </tr>
 	  {/foreach}
 	  <tr>
-	    <td></td><td></td><td></td><td></td><td><a class='uk-button uk-button-primary uk-button-mini' href='edit.php?type=add'>添加</a></td>
+	    <td></td><td></td><td></td><td></td><td><a class='uk-button uk-button-primary uk-button-mini' href='/xmtables/Index/Edit/type/add'>添加</a></td>
 	  </tr>
 	</table>
   </div>

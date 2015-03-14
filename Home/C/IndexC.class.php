@@ -34,7 +34,7 @@ class IndexC extends C{
 			}
 			$row=$protable->where($val)->order('id')->select();
 			if(session('id')==1){
-				$addht="<a class='uk-button uk-button-primary' href=".$_SERVER['SCRIPT_NAME']."/Index/Add/id/0>添加合同</a>";
+				$addht="<a class='uk-button uk-button-primary' href=".$_SERVER['SCRIPT_NAME']."/Index/Edit/id/0>添加合同</a>";
 				$this->assign('addht',$addht);
 			}
 	        $logout=" <a href='Logout.html'>注销</a>";
@@ -143,11 +143,11 @@ class IndexC extends C{
 			echo '参数非法!';
 		}
 	}
-	function Add(){
-		$protables = M('Protables');
+	function EditCheck(){
 		if(is_null(session('user'))){
 			die('非法访问!');
 		}else{
+			$protables = M('Protables');
 			if(isset($_POST['create_ht']) and session('id')==1){
 				if(!is_null(session('gid'))){
 					$sql = "`date`='$_POST[date]',`author`='$_POST[author]',`customer_a`='$_POST[customer_a]',`customer_b`='$_POST[customer_b]',`salesman`='$_POST[salesman]',`aom`='$_POST[aom]',`mdate`='$_POST[mdate]',`ydate`='$_POST[ydate]',`cdate`='$_POST[cdate]',`paytype`='$_POST[paytype]',`cnum`='$_POST[cnum]',`prjman`='$_POST[prjman]',`startom`='$_POST[startom]',`overom`='$_POST[overom]',`tman`='$_POST[tman]',`otman`='$_POST[otman]',`htstatus`=$_POST[htstatus]";
@@ -155,11 +155,15 @@ class IndexC extends C{
 					if($resut){
 						session('gid','null');
 						$this->url('提交成功！','/Index/Index.html');
+					}else{
+						echo 'SQL-'.$sql.'<br>';
+						die('操作错误:'.mysql_error());
 					}
+				}else{
+					$sql =	'';	
 				}
 			}
 		}
-		$this->display('CreateHt');
 	}
 	function LoginCheck(){
 		if(isset($_POST['login'])){
