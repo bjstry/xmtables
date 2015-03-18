@@ -2,64 +2,64 @@
 <div class='uk-grid'>
 <div class='uk-width-7-10 uk-container-center'>
 <table class='uk-table uk-table-hover'>
-{$edit}<span class='uk-button' onclick="print();">打印</span><a class='uk-button uk-float-right' onclick="history.go(-1);">返回</a>
+<[$edit]><span class='uk-button' onclick="print();">打印</span><a class='uk-button uk-float-right' onclick="history.go(-1);">返回</a>
   <br>
   <h2 class='uk-text-center' ><strong>项目管理表格</strong></h2>
   <tr>
-	  <td colspan=4><span>建表日期:&nbsp;<em>{$row['date']}</em></span><span class='uk-float-right'>填表人:&nbsp;<em>{$row['author']}</em></span></td>
+	  <td colspan=4><span>建表日期:&nbsp;<em><[$row['date']]></em></span><span class='uk-float-right'>填表人:&nbsp;<em><[$row['author']]></em></span></td>
   </tr>
   <tr>
     <th class='uk-text-center' colspan=4>合同基本情况</th>
   </tr>	
   <tr>
-    <td>客户单位</td><td><em>{$row['customer_a']}</td><td>院系、姓名</td><td><em>{$row['customer_b']}</td>
+    <td>客户单位</td><td><em><[$row['customer_a']]></td><td>院系、姓名</td><td><em><[$row['customer_b']]></td>
   </tr>
   <tr>
-    <td>业务负责人</td><td><em>{$row['salesman']}</td><td>合同金额</td><td><em>{$row['aom']}</td>
+    <td>业务负责人</td><td><em><[$row['salesman']]></td><td>合同金额</td><td><em><[$row['aom']]></td>
   </tr>
   <tr>
-    <td>我方签字日期</td><td><em>{$row['mdate']}</td><td>客户签字日期</td><td><em>{$row['ydate']}</td>
+    <td>我方签字日期</td><td><em><[$row['mdate']]></td><td>客户签字日期</td><td><em><[$row['ydate']]></td>
   </tr>
   <tr>
-    <td>合同签订日期</td><td><em>{$row['cdate']}</td><td>付款方式</td><td><em>{$row['paytype']}</td>
+    <td>合同签订日期</td><td><em><[$row['cdate']]></td><td>付款方式</td><td><em><[$row['paytype']]></td>
   </tr>
   <tr>
-    <td>合同编号</td><td><em>{$row['cnum']}</td><td>项目负责人</td><td><em>{$row['prjman']}</td>
+    <td>合同编号</td><td><em><[$row['cnum']]></td><td>项目负责人</td><td><em><[$row['prjman']]></td>
   </tr>
   <tr>
-    <td>方案报价</td><td><em>{$row['startom']}</td><td>最终售价</td><td><em>{$row['overom']}</td>
+    <td>方案报价</td><td><em><[$row['startom']]></td><td>业务主要沟通人</td><td><em><[$row['tman']]></td>
   </tr>
   <tr>
-    <td>业务主要沟通人</td><td><em>{$row['tman']}</td><td>辅助人员</td><td><em>{$row['otman']}</td>
+    <td colspan=2>辅助人员</td><td colspan=2><em><[$row['otman']]></td>
   </tr>
   <tr>
     <th class='uk-text-center' colspan=4>下单</th>
   </tr>
   <tr>
-    <td>下单编号</td><td><em>{$row['onum']}</td><td>下单日期</td><td><em>{$row['odate']}</td>
+    <td>下单编号</td><td><em><[$row['onum']]></td><td>下单日期</td><td><em><[$row['odate']]></td>
   </tr>
   <tr>
     <th class='uk-text-center' colspan=4>发货</th>
   </tr>
   <tr>
-    <td>发货日期</td><td><em>{$row['sdate']}</td><td>发货方式/单号</td><td><em>{$row['stype']}</td>
+    <td>发货日期</td><td><em><[$row['sdate']]></td><td>发货方式/单号</td><td><em><[$row['stype']]></td>
   </tr>
   <tr>
-    <td>安装人员</td><td><em>{$row['techman']}</td><td>安装日期</td><td><em>{$row['tdate']}</td>
+    <td>安装人员</td><td><em><[$row['techman']]></td><td>安装日期</td><td><em><[$row['tdate']]></td>
   </tr>
   <tr>
-    <td>验收日期</td><td><em>{$row['checkdate']}</td><td>验收人</td><td><em>{$row['checkman']}</td>
+    <td>验收日期</td><td><em><[$row['checkdate']]></td><td>验收人</td><td><em><[$row['checkman']]></td>
   </tr>
   <tr>
     <th colspan=4 class='uk-text-center'>开票</th>
   </tr>
   <tr>
     <td>开票日期</td><td>开票金额</td><td>发票寄送日期</td><td>发票寄送方式</td>
-	{foreach $kprow as $val}
+	<[foreach $kprow as $val]>
   <tr>
-    <td><em>{$val['kdate']}</td><td><em>{$val['kom']}</td><td><em>{$val['fsdate']}</td><td><em>{$val['fstype']}</em></td>
+    <td><em><[$val['kdate']]></td><td><em><[$val['kom']]></td><td><em><[$val['fsdate']]></td><td><em><[$val['fstype']]></em></td>
   </tr>
-   {/foreach}
+   <[/foreach]>
   <tr>
     <th colspan=4 class='uk-text-center'>收款</th>
   </tr>
@@ -67,11 +67,11 @@
   <tr>
     <td>货款应到日期</td><td>货款实到日期</td><td>付款金额</td><td>应收账款</td>
   </tr>
-  {foreach $skrow as $val}
+  <[foreach $skrow as $val]>
   <tr>
-    <td><em>{$val['gsdate']}</td><td><em>{$val['godate']}</td><td><em>{$val['gom']}</td><td><em>{$val['shom']}</em></td>
+    <td><em><[$val['gsdate']]></td><td><em><[$val['godate']]></td><td><em><[$val['gom']]></td><td><em><[$val['shom']]></em></td>
   </tr>
-  {/foreach}
+  <[/foreach]>
 </table>
 </div>
 <div class='uk-width-7-10 uk-container-center uk-margin-top uk-margin-bottom'>

@@ -1,0 +1,13 @@
+<body>
+	<div class='uk-grid'>
+		<div class='uk-width-4-10 uk-container-center'>
+			<form class='uk-form' action='<[$smarty.const.R]>/User/ChangeCheck' method='post'>
+				<input type='password' name='oldpasswd' placeholder='请输入旧密码'>
+				<input type='password' name='newpasswd' placeholder='请输入新密码'>
+				<input type='password' name='newpassv' placeholder='重复输入'>
+				<input type='submit' class='uk-button uk-button-primary' name='chage' value='提交'>
+				<a class='uk-button' onClick="history.back()">返回</a>
+			</form>
+		</div>
+	</div>
+</body>

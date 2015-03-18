@@ -5,13 +5,13 @@
 	  <tr>
 	    <td>货款应到日期</td><td>货款实到日期</td><td>付款金额</td><td>应收账款</td><td>操作</td>
 	  </tr>
-	  {foreach $srow as $val}
+	  <[foreach $srow as $val]>
 	  <tr>
-	    <td>{$val['gsdate'] }</td><td>{$val['godate'] }</td><td>{$val['gom'] }</td><td>{$val['shom'] }</td><td><a class='uk-button uk-button-mini' href="edit.php?type=upd&e={$val[id] }" onclick=''>编辑</a></td>
+		  <td><[$val['gsdate']]></td><td><[$val['godate']]></td><td><[$val['gom']]></td><td><[$val['shom']]></td><td><a class='uk-button uk-button-mini' href="<[$smarty.const.R]>/Index/Edit.html?type=upd&e=<[$val['id']]>" onclick=''>编辑</a></td>
 	  </tr>
-	  {/foreach}
+	  <[/foreach]>
 	  <tr>
-	    <td></td><td></td><td></td><td></td><td><a class='uk-button uk-button-primary uk-button-mini' href='/xmtables/Index/Edit/type/add'>添加</a></td>
+		  <td></td><td></td><td></td><td></td><td><a class='uk-button uk-button-primary uk-button-mini' href='<[$smarty.const.R]>/Index/Edit/type/add'>添加</a></td>
 	  </tr>
 	</table>
   </div>

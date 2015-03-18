@@ -2,14 +2,14 @@
 	<div class='uk-grid'>
 		<div class='uk-width-7-10 uk-container-center'>
 <h2>设备规格</h2>
-<form class='uk-form' action='/xmtables/Index/EditCheck' method='post'>
-	下单日期:<input type='text' name='odate' value="{$row['odate']}"><br />
-	下单编号:<input type='text' name='onum' value="{$row['onum']}"><br />
-	cpu:<input type='text' name='cpu' value="{$row['cpu']}"><br />
-	内存:<input type='text' name='memery'value="{$row['memery']}"><br>
-	硬盘:<input type='text' name='harddisk' value="{$row['harddisk']}"><br>
-	主板:<input type='text' name='board' value="{$row['board']}"><br>
-	其他:<input type='text' name='other' value="{$row['other']}"><br>
+<form class='uk-form' action='<[$smarty.const.R]>/Index/EditCheck' method='post'>
+	下单日期:<input type='text' name='odate' value="<[$row['odate']]>"><br />
+	下单编号:<input type='text' name='onum' value="<[$row['onum']]>"><br />
+	cpu:<input type='text' name='cpu' value="<[$row['cpu']]>"><br />
+	内存:<input type='text' name='memery'value="<[$row['memery']]>"><br>
+	硬盘:<input type='text' name='harddisk' value="<[$row['harddisk']]>"><br>
+	主板:<input type='text' name='board' value="<[$row['board']]>"><br>
+	其他:<input type='text' name='other' value="<[$row['other']]>"><br>
 	是否存为<abbr title="无法修改">最终</abbr>？<br>
     <input type="radio" name="xdstatus" checked value=0 >否
 	<input type="radio" name="xdstatus" value=1 >是<br>
