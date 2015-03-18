@@ -52,7 +52,7 @@ class IndexC extends C{
 				$addht="<a class='uk-button uk-button-primary' href=".$_SERVER['SCRIPT_NAME']."/Index/Edit/id/0>添加合同</a>";
 				$this->assign('addht',$addht);
 			}
-			$logout=" <a href='Logout.html'>注销</a>";
+			$logout=" <a href='".R."/Index/Logout.html'>注销</a>";
 			$change=" <a href='/xmtables/user/changepasswd.html'>修改密码</a>";
 			$this->assign('title','Gentai-tables '.$well.'列表');
 			$this->assign('job',$well);
@@ -62,7 +62,7 @@ class IndexC extends C{
 			$this->assign('row',$row);
 			$this->display();
 		}else{
-			echo '请先登录';
+			$this->url('请先登录','/index/login.html');
 		}   
 	}
 	function Login(){
@@ -181,7 +181,8 @@ class IndexC extends C{
 					$sql =	"'','$_POST[date]','$_POST[author]','$_POST[customer_a]','$_POST[customer_b]','$_POST[salesman]','$_POST[aom]','$_POST[mdate]','$_POST[ydate]','$_POST[cdate]','$_POST[paytype]','$_POST[cnum]','$_POST[prjman]',$_POST[startom],$_POST[overom],'$_POST[tman]','$_POST[otman]',".mktime().",$_POST[htstatus],1";	
 					$resut = $protables->insert($qsql,$sql);
 					if($resut){
-						$this->url('添加成功!','/Index/Index.html');
+						echo '添加成功';
+						//$this->url('添加成功!','/Index/Index.html');
 					}else{
 						echo 'SQL-'.$sql.'<br>';
 						die('操作错误:'.mysql_error());
@@ -288,7 +289,7 @@ class IndexC extends C{
 	function Logout(){
 		session('user','null');
 		session('id','null');
-		echo "<script>alert('注销成功！');location.href='index';</script>";
+		echo "<script>alert('注销成功！');location.href='".R."/index/login.html';</script>";
 	}
 	function Abc(){
 		print_r($_POST);
