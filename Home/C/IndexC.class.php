@@ -53,7 +53,7 @@ class IndexC extends C{
 				$this->assign('addht',$addht);
 			}
 			$logout=" <a href='".R."/Index/Logout.html'>注销</a>";
-			$change=" <a href='/xmtables/user/changepasswd.html'>修改密码</a>";
+			$change=" <a href='".R."/user/changepasswd.html'>修改密码</a>";
 			$this->assign('title','Gentai-tables '.$well.'列表');
 			$this->assign('job',$well);
 			$this->assign('user',session('user'));
