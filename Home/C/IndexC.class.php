@@ -43,7 +43,7 @@ class IndexC extends C{
 				$this->url('清楚搜索');
 			}
 			if(!is_null(session('keywords'))){
-				$val.=" and customer_a LIKE '%".$_SESSION['keywords']."%' or onum LIKE '".$_SESSION['keywords']."'";
+				$val.=" and customer_a LIKE '%".$_SESSION['keywords']."%' or cnum LIKE '".$_SESSION['keywords']."'";
 				$search = "<a href='".R."/Index/Index/search/clean'>清除搜索结果</a>&nbsp;&nbsp;&nbsp;";
 				$this->assign('search',$search);
 			}
