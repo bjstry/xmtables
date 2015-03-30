@@ -1,6 +1,5 @@
 <?php
 	class View{
-		const baijinsong = '白劲松是好人';
 		private $view;
 		public function display($name='index',$moban=null,$info=null,$url=null){
 			include_once './lib/config.php';
