@@ -78,7 +78,6 @@ class IndexC extends C{
 			$this->assign('url',URL.'/Index/Add');
 		}else{
 			if(isset($_GET['id'])){
-				echo 'seesion git set null';
 				session('gid','null');
 			}
 		}
@@ -182,7 +181,7 @@ class IndexC extends C{
 					$resut = $protables->insert($qsql,$sql);
 					if($resut){
 						echo '添加成功';
-						//$this->url('添加成功!','/Index/Index.html');
+						$this->url('添加成功!','/Index/Index.html');
 					}else{
 						echo 'SQL-'.$sql.'<br>';
 						die('操作错误:'.mysql_error());
