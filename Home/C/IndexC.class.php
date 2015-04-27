@@ -1,4 +1,7 @@
 <?php
+/*
+ *   首页控制器，大部分功能集中
+ */
 class IndexC extends C{
 	protected $urow = null;
 	function Index(){
