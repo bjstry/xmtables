@@ -5,6 +5,7 @@
 class IndexC extends C{
 	protected $urow = null;
 	function Index(){
+		$showdrow = false;
 		if(!is_null(session('user'))){
 			switch (session('id')){
 			case 1:
@@ -31,7 +32,9 @@ class IndexC extends C{
 			$id=session('id');
 			$protable = M('Protables');
 			if($id==0){
-				$val = "`htstatus`=1 and `xdstatus`=1 and `fhstatus`=1 and `kpstatus`=1 and `skstatus`=1 and `showstatus`=1";
+				$dval = "`htstatus`=1 and `xdstatus`=1 and `fhstatus`=1 and `kpstatus`=1 and `skstatus`=1 and `showstatus`=1";
+				$val = "(`htstatus`=0 || `xdstatus`=0 || `fhstatus`=0 || `kpstatus`=0 || `skstatus`=0 || `showstatus`=0) && `showstatus`=1";
+				$showdrow = true;
 			}else{
 				$val = "(`htstatus`=0 || `xdstatus`=0 || `fhstatus`=0 || `kpstatus`=0 || `skstatus`=0 || `showstatus`=0) && `showstatus`=1";
 			}
@@ -54,6 +57,11 @@ class IndexC extends C{
 			if(session('id')==1){
 				$addht="<a class='uk-button uk-button-primary' href=".$_SERVER['SCRIPT_NAME']."/Index/Edit/id/0>添加合同</a>";
 				$this->assign('addht',$addht);
+			}
+			if($showdrow){
+				$drow=$protable->where($dval)->order('id')->select();
+				$this->assign('showdrow',"<li><a href='#'>已归档</a></li>");
+				$this->assign('drow',$drow);
 			}
 			$logout=" <a href='".R."/Index/Logout.html'>注销</a>";
 			$change=" <a href='".R."/user/changepasswd.html'>修改密码</a>";
@@ -105,7 +113,6 @@ class IndexC extends C{
 					$nrow = $protablekp->where("id=$_GET[e]")->find();
 					$this->assign('row',$nrow);
 				}
-				print_r($_SESSION);
 				$this->display('CreateKp');
 			}else{
 				$kprow = $protablekp->where("cid='$_GET[id]'")->select();
@@ -122,10 +129,8 @@ class IndexC extends C{
 					session('sk_key',$_GET['e']);
 					session('sk','null');
 					$nrow = $protablesk->where("id=$_GET[e]")->find();
-					print_r($nrow);
 					$this->assign('row',$nrow);
 				}
-				print_r($_SESSION);
 				$this->display('CreateSk');
 			}else{
 				$skrow = $protablesk->where("cid='$_GET[id]'")->select();
@@ -151,6 +156,7 @@ class IndexC extends C{
 				if(session('id')!=0){
 					$edit = "<a class='uk-button uk-button-primary' href=".URL."/Index/Edit/id/".$row['id'].">编辑</a>&nbsp;&nbsp;";
 				}
+				$row = MakeValue($row,session('id'));
 				$this->assign('title','Gentai-Tables-添加');
 				$this->assign('edit',$edit);
 				$this->assign('row',$row);
@@ -212,7 +218,6 @@ class IndexC extends C{
 				}
 			}else if(isset($_POST['create_kp']) and session('id')==4){
 				if(!is_null(session('kp'))){
-					print_r($_SESSION);
 					$qsql = "`id`,`cid`,`kdate`,`kom`,`fsdate`,`fstype`";
 					$sql = "'',$_SESSION[gid],'$_POST[kdate]',$_POST[kom],'$_POST[fsdate]','$_POST[fstype]'";
 					$resut = $protablekp->insert($qsql,$sql);
@@ -255,7 +260,6 @@ class IndexC extends C{
 					$resut = $protablesk->where("`id`=$_SESSION[sk_key]")->update($sql);	
 					if($resut){
 						$mresut = $protables->where("`id`='$_SESSION[gid]'")->update($msql);
-						print_r($_SESSION);
 						session('sk_key','null');
 						$this->url('提交成功!','/Index/Index.html');
 					}else{
