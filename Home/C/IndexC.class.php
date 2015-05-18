@@ -4,6 +4,12 @@
  */
 class IndexC extends C{
 	protected $urow = null;
+	/*-----defined fro Index-----*/
+	private $search = '';
+	private $showdrow = false;
+	private $showdrowcon = '';
+	private $addht = '';
+	private $drow = '';
 	function Index(){
 		$showdrow = false;
 		if(!is_null(session('user'))){
@@ -34,7 +40,7 @@ class IndexC extends C{
 			if($id==0){
 				$dval = "`htstatus`=1 and `xdstatus`=1 and `fhstatus`=1 and `kpstatus`=1 and `skstatus`=1 and `showstatus`=1";
 				$val = "(`htstatus`=0 || `xdstatus`=0 || `fhstatus`=0 || `kpstatus`=0 || `skstatus`=0 || `showstatus`=0) && `showstatus`=1";
-				$showdrow = true;
+				$this->showdrow = true;
 			}else{
 				$val = "(`htstatus`=0 || `xdstatus`=0 || `fhstatus`=0 || `kpstatus`=0 || `skstatus`=0 || `showstatus`=0) && `showstatus`=1";
 			}
@@ -50,23 +56,24 @@ class IndexC extends C{
 			}
 			if(!is_null(session('keywords'))){
 				$val.=" and customer_a LIKE '%".$_SESSION['keywords']."%' or cnum LIKE '".$_SESSION['keywords']."'";
-				$search = "<a href='".R."/Index/Index/search/clean'>清除搜索结果</a>&nbsp;&nbsp;&nbsp;";
-				$this->assign('search',$search);
+				$this->search = "<a href='".R."/Index/Index/search/clean'>清除搜索结果</a>&nbsp;&nbsp;&nbsp;";
 			}
 			$row=$protable->where($val)->order('id')->select();
 			if(session('id')==1){
-				$addht="<a class='uk-button uk-button-primary' href=".$_SERVER['SCRIPT_NAME']."/Index/Edit/id/0>添加合同</a>";
-				$this->assign('addht',$addht);
+				$this->addht="<a class='uk-button uk-button-primary' href=".$_SERVER['SCRIPT_NAME']."/Index/Edit/id/0>添加合同</a>";
 			}
-			if($showdrow){
-				$drow=$protable->where($dval)->order('id')->select();
-				$this->assign('showdrow',"<li><a href='#'>已归档</a></li>");
-				$this->assign('drow',$drow);
+			if($this->showdrow){
+				$this->drow=$protable->where($dval)->order('id')->select();
+				$this->showdrowcon = "<li><a href='#'>已归档</a></li>";
 			}
 			$logout=" <a href='".R."/Index/Logout.html'>注销</a>";
 			$change=" <a href='".R."/user/changepasswd.html'>修改密码</a>";
 			$this->assign('title','Gentai-tables '.$well.'列表');
 			$this->assign('job',$well);
+			$this->assign('search',$this->search);
+			$this->assign('addht',$this->addht);
+			$this->assign('drow',$this->drow);
+			$this->assign('showdrow',$this->showdrowcon);
 			$this->assign('user',session('user'));
 			$this->assign('logout',$logout);
 			$this->assign('change',$change);
