@@ -177,7 +177,7 @@ class IndexC extends C{
 		if(is_null(session('user'))){
 			die('非法访问!');
 		}else{
-			$protables = M('Protables');
+			$protables = D('Protables');
 			$protablekp = M('Protablekp');
 			$protablesk = M('Protablesk');
 			if(isset($_POST['create_ht']) and session('id')==1){
@@ -193,7 +193,7 @@ class IndexC extends C{
 					}
 				}else{
 					$qsql = "`id`,`date`,`author`,`customer_a`,`customer_b`,`salesman`,`aom`,`mdate`,`ydate`,`cdate`,`paytype`,`cnum`,`prjman`,`startom`,`overom`,`tman`,`otman`,`subdate`,`htstatus`,`showstatus`";
-					$sql =	"'','$_POST[date]','$_POST[author]','$_POST[customer_a]','$_POST[customer_b]','$_POST[salesman]','$_POST[aom]','$_POST[mdate]','$_POST[ydate]','$_POST[cdate]','$_POST[paytype]','$_POST[cnum]','$_POST[prjman]',$_POST[startom],$_POST[overom],'$_POST[tman]','$_POST[otman]',".mktime().",$_POST[htstatus],1";	
+					$sql =	"'','$_POST[date]','$_POST[author]','$_POST[customer_a]','$_POST[customer_b]','$_POST[salesman]','$_POST[aom]','$_POST[mdate]','$_POST[ydate]','$_POST[cdate]','$_POST[paytype]','$_POST[cnum]','$_POST[prjman]','$_POST[startom]','$_POST[overom]','$_POST[tman]','$_POST[otman]',".mktime().",$_POST[htstatus],1";	
 					$resut = $protables->insert($qsql,$sql);
 					if($resut){
 						echo '添加成功';
