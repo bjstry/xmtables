@@ -58,7 +58,9 @@ class IndexC extends C{
 				$val.=" and customer_a LIKE '%".$_SESSION['keywords']."%' or cnum LIKE '".$_SESSION['keywords']."'";
 				$this->search = "<a href='".R."/Index/Index/search/clean'>清除搜索结果</a>&nbsp;&nbsp;&nbsp;";
 			}
-			$row=$protable->where($val)->order('id')->select();
+			//$temp_row=$protable->where($val)->order('id')->page(13,10,'pid',$_GET['pid']);
+			$temp_row=$protable->where($val)->order('id')->page();
+			$row = $temp_row[0];
 			if(session('id')==1){
 				$this->addht="<a class='uk-button uk-button-primary' href=".$_SERVER['SCRIPT_NAME']."/Index/Edit/id/0>添加合同</a>";
 			}
@@ -78,6 +80,7 @@ class IndexC extends C{
 			$this->assign('logout',$logout);
 			$this->assign('change',$change);
 			$this->assign('row',$row);
+			$this->assign('getpage',$temp_row[1]);
 			$this->display();
 		}else{
 			$this->url('请先登录','/index/login.html');
