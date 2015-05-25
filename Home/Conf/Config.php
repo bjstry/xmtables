@@ -1,7 +1,7 @@
 <?php
 return array(
 	'DEBUG'     =>false,
-	'DB_HOST'   =>'192.168.18.3',
+	'DB_HOST'   =>'localhost',
 	'DB_NAME'   =>'gentai',
 	'DB_USER'   =>'root',
 	'DB_PASS'   =>'gentai',
