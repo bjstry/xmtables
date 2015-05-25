@@ -1,3 +1,6 @@
-	$("#uname").change( function() {
-		alert(1);	
+$(function(){
+	$("#aom").change(function(){
+		var aval = parseInt($("#aom").val());
+		$("#overom").val(aval);
 	});
+});
