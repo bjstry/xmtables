@@ -9,6 +9,6 @@ return array(
 	'DB_CHARSET'=>'utf-8',
 	'DT_V_LEFT' =>'<[',
 	'DT_V_RIGHT'=>']>',
-	'PAGE_NUM'  =>10,
+	'PAGE_NUM'  =>15,
 );
 ?>
