@@ -4,7 +4,9 @@ function CheckLogin(){
 }
 function MakeValue($arr,$gid){
 	if($gid!=1 && $gid!=0){
-		$arr['aom'] =  "**";
+		if($gid!=4){
+			$arr['aom'] =  "**";
+		}
 		$arr['mdate'] =  "**";
 		$arr['ydate'] =  "**";
 		$arr['paytype'] =  "**";

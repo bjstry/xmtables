@@ -1,0 +1,74 @@
+2015-06-15 23:16:06 772 行 [2] filemtime(): stat failed for Home/T_c/9c588d609c38261fc8db46e49b2cfce67ea84a8a.file.head.html.php 在文件 /home/jinsong/Project/web/Speek/Lib/Tpl/sysplugins/smarty_resource.php 中
+2015-06-15 23:16:06 772 行 [2] filemtime(): stat failed for Home/T_c/719501285c6d14859befb6554b722dfe5911e8c4.file.IndexView.html.php 在文件 /home/jinsong/Project/web/Speek/Lib/Tpl/sysplugins/smarty_resource.php 中
+2015-06-15 23:16:06 112 行 [8] Undefined index: kprow 在文件 /home/jinsong/Project/web/Speek/Lib/Tpl/sysplugins/smarty_internal_templatebase.php(157) : eval()'d code 中
+2015-06-15 23:16:06 112 行 [8] Trying to get property of non-object 在文件 /home/jinsong/Project/web/Speek/Lib/Tpl/sysplugins/smarty_internal_templatebase.php(157) : eval()'d code 中
+2015-06-15 23:16:06 132 行 [8] Undefined index: skrow 在文件 /home/jinsong/Project/web/Speek/Lib/Tpl/sysplugins/smarty_internal_templatebase.php(157) : eval()'d code 中
+2015-06-15 23:16:06 132 行 [8] Trying to get property of non-object 在文件 /home/jinsong/Project/web/Speek/Lib/Tpl/sysplugins/smarty_internal_templatebase.php(157) : eval()'d code 中
+2015-06-15 23:16:06 772 行 [2] filemtime(): stat failed for Home/T_c/6967c8872c9728eac072363e97fe2558612067c0.file.footer.html.php 在文件 /home/jinsong/Project/web/Speek/Lib/Tpl/sysplugins/smarty_resource.php 中
+2015-06-15 23:16:06 112 行 [8] Undefined index: kprow 在文件 /home/jinsong/Project/web/xmtables/Home/T_c/719501285c6d14859befb6554b722dfe5911e8c4.file.IndexView.html.php 中
+2015-06-15 23:16:06 112 行 [8] Trying to get property of non-object 在文件 /home/jinsong/Project/web/xmtables/Home/T_c/719501285c6d14859befb6554b722dfe5911e8c4.file.IndexView.html.php 中
+2015-06-15 23:16:06 132 行 [8] Undefined index: skrow 在文件 /home/jinsong/Project/web/xmtables/Home/T_c/719501285c6d14859befb6554b722dfe5911e8c4.file.IndexView.html.php 中
+2015-06-15 23:16:06 132 行 [8] Trying to get property of non-object 在文件 /home/jinsong/Project/web/xmtables/Home/T_c/719501285c6d14859befb6554b722dfe5911e8c4.file.IndexView.html.php 中
+2015-06-15 23:16:06 112 行 [8] Undefined index: kprow 在文件 /home/jinsong/Project/web/xmtables/Home/T_c/719501285c6d14859befb6554b722dfe5911e8c4.file.IndexView.html.php 中
+2015-06-15 23:16:06 112 行 [8] Trying to get property of non-object 在文件 /home/jinsong/Project/web/xmtables/Home/T_c/719501285c6d14859befb6554b722dfe5911e8c4.file.IndexView.html.php 中
+2015-06-15 23:16:06 132 行 [8] Undefined index: skrow 在文件 /home/jinsong/Project/web/xmtables/Home/T_c/719501285c6d14859befb6554b722dfe5911e8c4.file.IndexView.html.php 中
+2015-06-15 23:16:06 132 行 [8] Trying to get property of non-object 在文件 /home/jinsong/Project/web/xmtables/Home/T_c/719501285c6d14859befb6554b722dfe5911e8c4.file.IndexView.html.php 中
+2015-06-15 23:19:29 772 行 [2] filemtime(): stat failed for Home/T_c/554cfb1d67a8f8896d02b2a9dc657c6e0d01f9be.file.IndexIndex.html.php 在文件 /home/jinsong/Project/web/Speek/Lib/Tpl/sysplugins/smarty_resource.php 中
+2015-06-15 23:19:29 42 行 [8] Undefined index: search 在文件 /home/jinsong/Project/web/Speek/Lib/Tpl/sysplugins/smarty_internal_templatebase.php(157) : eval()'d code 中
+2015-06-15 23:19:29 42 行 [8] Trying to get property of non-object 在文件 /home/jinsong/Project/web/Speek/Lib/Tpl/sysplugins/smarty_internal_templatebase.php(157) : eval()'d code 中
+2015-06-15 23:19:29 59 行 [8] Undefined index: showdrow 在文件 /home/jinsong/Project/web/Speek/Lib/Tpl/sysplugins/smarty_internal_templatebase.php(157) : eval()'d code 中
+2015-06-15 23:19:29 59 行 [8] Trying to get property of non-object 在文件 /home/jinsong/Project/web/Speek/Lib/Tpl/sysplugins/smarty_internal_templatebase.php(157) : eval()'d code 中
+2015-06-15 23:19:29 82 行 [8] Undefined index: addht 在文件 /home/jinsong/Project/web/Speek/Lib/Tpl/sysplugins/smarty_internal_templatebase.php(157) : eval()'d code 中
+2015-06-15 23:19:29 82 行 [8] Trying to get property of non-object 在文件 /home/jinsong/Project/web/Speek/Lib/Tpl/sysplugins/smarty_internal_templatebase.php(157) : eval()'d code 中
+2015-06-15 23:19:29 89 行 [8] Undefined index: drow 在文件 /home/jinsong/Project/web/Speek/Lib/Tpl/sysplugins/smarty_internal_templatebase.php(157) : eval()'d code 中
+2015-06-15 23:19:29 89 行 [8] Trying to get property of non-object 在文件 /home/jinsong/Project/web/Speek/Lib/Tpl/sysplugins/smarty_internal_templatebase.php(157) : eval()'d code 中
+2015-06-15 23:19:32 42 行 [8] Undefined index: search 在文件 /home/jinsong/Project/web/xmtables/Home/T_c/554cfb1d67a8f8896d02b2a9dc657c6e0d01f9be.file.IndexIndex.html.php 中
+2015-06-15 23:19:32 42 行 [8] Trying to get property of non-object 在文件 /home/jinsong/Project/web/xmtables/Home/T_c/554cfb1d67a8f8896d02b2a9dc657c6e0d01f9be.file.IndexIndex.html.php 中
+2015-06-15 23:19:32 59 行 [8] Undefined index: showdrow 在文件 /home/jinsong/Project/web/xmtables/Home/T_c/554cfb1d67a8f8896d02b2a9dc657c6e0d01f9be.file.IndexIndex.html.php 中
+2015-06-15 23:19:32 59 行 [8] Trying to get property of non-object 在文件 /home/jinsong/Project/web/xmtables/Home/T_c/554cfb1d67a8f8896d02b2a9dc657c6e0d01f9be.file.IndexIndex.html.php 中
+2015-06-15 23:19:32 82 行 [8] Undefined index: addht 在文件 /home/jinsong/Project/web/xmtables/Home/T_c/554cfb1d67a8f8896d02b2a9dc657c6e0d01f9be.file.IndexIndex.html.php 中
+2015-06-15 23:19:32 82 行 [8] Trying to get property of non-object 在文件 /home/jinsong/Project/web/xmtables/Home/T_c/554cfb1d67a8f8896d02b2a9dc657c6e0d01f9be.file.IndexIndex.html.php 中
+2015-06-15 23:19:32 89 行 [8] Undefined index: drow 在文件 /home/jinsong/Project/web/xmtables/Home/T_c/554cfb1d67a8f8896d02b2a9dc657c6e0d01f9be.file.IndexIndex.html.php 中
+2015-06-15 23:19:32 89 行 [8] Trying to get property of non-object 在文件 /home/jinsong/Project/web/xmtables/Home/T_c/554cfb1d67a8f8896d02b2a9dc657c6e0d01f9be.file.IndexIndex.html.php 中
+2015-06-15 23:56:04 171 行 [8] Undefined index: pid 在文件 /home/jinsong/Project/web/Speek/Core/M.class.php 中
+2015-06-15 23:56:04 101 行 [8] Uninitialized string offset: 0 在文件 /home/jinsong/Project/web/Speek/Lib/Tpl/sysplugins/smarty_internal_templatebase.php(171) : eval()'d code 中
+2015-06-15 23:56:04 102 行 [8] Uninitialized string offset: 0 在文件 /home/jinsong/Project/web/Speek/Lib/Tpl/sysplugins/smarty_internal_templatebase.php(171) : eval()'d code 中
+2015-06-15 23:56:04 103 行 [8] Uninitialized string offset: 0 在文件 /home/jinsong/Project/web/Speek/Lib/Tpl/sysplugins/smarty_internal_templatebase.php(171) : eval()'d code 中
+2015-06-15 23:56:04 104 行 [8] Uninitialized string offset: 0 在文件 /home/jinsong/Project/web/Speek/Lib/Tpl/sysplugins/smarty_internal_templatebase.php(171) : eval()'d code 中
+2015-06-15 23:56:04 105 行 [8] Uninitialized string offset: 0 在文件 /home/jinsong/Project/web/Speek/Lib/Tpl/sysplugins/smarty_internal_templatebase.php(171) : eval()'d code 中
+2015-06-15 23:56:04 171 行 [8] Undefined index: pid 在文件 /home/jinsong/Project/web/Speek/Core/M.class.php 中
+2015-06-15 23:56:04 101 行 [8] Uninitialized string offset: 0 在文件 /home/jinsong/Project/web/xmtables/Home/T_c/554cfb1d67a8f8896d02b2a9dc657c6e0d01f9be.file.IndexIndex.html.php 中
+2015-06-15 23:56:04 102 行 [8] Uninitialized string offset: 0 在文件 /home/jinsong/Project/web/xmtables/Home/T_c/554cfb1d67a8f8896d02b2a9dc657c6e0d01f9be.file.IndexIndex.html.php 中
+2015-06-15 23:56:04 103 行 [8] Uninitialized string offset: 0 在文件 /home/jinsong/Project/web/xmtables/Home/T_c/554cfb1d67a8f8896d02b2a9dc657c6e0d01f9be.file.IndexIndex.html.php 中
+2015-06-15 23:56:04 104 行 [8] Uninitialized string offset: 0 在文件 /home/jinsong/Project/web/xmtables/Home/T_c/554cfb1d67a8f8896d02b2a9dc657c6e0d01f9be.file.IndexIndex.html.php 中
+2015-06-15 23:56:04 105 行 [8] Uninitialized string offset: 0 在文件 /home/jinsong/Project/web/xmtables/Home/T_c/554cfb1d67a8f8896d02b2a9dc657c6e0d01f9be.file.IndexIndex.html.php 中
+2015-06-15 23:56:05 171 行 [8] Undefined index: pid 在文件 /home/jinsong/Project/web/Speek/Core/M.class.php 中
+2015-06-15 23:56:05 101 行 [8] Uninitialized string offset: 0 在文件 /home/jinsong/Project/web/xmtables/Home/T_c/554cfb1d67a8f8896d02b2a9dc657c6e0d01f9be.file.IndexIndex.html.php 中
+2015-06-15 23:56:05 102 行 [8] Uninitialized string offset: 0 在文件 /home/jinsong/Project/web/xmtables/Home/T_c/554cfb1d67a8f8896d02b2a9dc657c6e0d01f9be.file.IndexIndex.html.php 中
+2015-06-15 23:56:05 103 行 [8] Uninitialized string offset: 0 在文件 /home/jinsong/Project/web/xmtables/Home/T_c/554cfb1d67a8f8896d02b2a9dc657c6e0d01f9be.file.IndexIndex.html.php 中
+2015-06-15 23:56:05 104 行 [8] Uninitialized string offset: 0 在文件 /home/jinsong/Project/web/xmtables/Home/T_c/554cfb1d67a8f8896d02b2a9dc657c6e0d01f9be.file.IndexIndex.html.php 中
+2015-06-15 23:56:05 105 行 [8] Uninitialized string offset: 0 在文件 /home/jinsong/Project/web/xmtables/Home/T_c/554cfb1d67a8f8896d02b2a9dc657c6e0d01f9be.file.IndexIndex.html.php 中
+2015-06-15 23:56:05 171 行 [8] Undefined index: pid 在文件 /home/jinsong/Project/web/Speek/Core/M.class.php 中
+2015-06-15 23:56:05 101 行 [8] Uninitialized string offset: 0 在文件 /home/jinsong/Project/web/xmtables/Home/T_c/554cfb1d67a8f8896d02b2a9dc657c6e0d01f9be.file.IndexIndex.html.php 中
+2015-06-15 23:56:05 102 行 [8] Uninitialized string offset: 0 在文件 /home/jinsong/Project/web/xmtables/Home/T_c/554cfb1d67a8f8896d02b2a9dc657c6e0d01f9be.file.IndexIndex.html.php 中
+2015-06-15 23:56:05 103 行 [8] Uninitialized string offset: 0 在文件 /home/jinsong/Project/web/xmtables/Home/T_c/554cfb1d67a8f8896d02b2a9dc657c6e0d01f9be.file.IndexIndex.html.php 中
+2015-06-15 23:56:05 104 行 [8] Uninitialized string offset: 0 在文件 /home/jinsong/Project/web/xmtables/Home/T_c/554cfb1d67a8f8896d02b2a9dc657c6e0d01f9be.file.IndexIndex.html.php 中
+2015-06-15 23:56:05 105 行 [8] Uninitialized string offset: 0 在文件 /home/jinsong/Project/web/xmtables/Home/T_c/554cfb1d67a8f8896d02b2a9dc657c6e0d01f9be.file.IndexIndex.html.php 中
+2015-06-15 23:56:05 171 行 [8] Undefined index: pid 在文件 /home/jinsong/Project/web/Speek/Core/M.class.php 中
+2015-06-15 23:56:05 101 行 [8] Uninitialized string offset: 0 在文件 /home/jinsong/Project/web/xmtables/Home/T_c/554cfb1d67a8f8896d02b2a9dc657c6e0d01f9be.file.IndexIndex.html.php 中
+2015-06-15 23:56:05 102 行 [8] Uninitialized string offset: 0 在文件 /home/jinsong/Project/web/xmtables/Home/T_c/554cfb1d67a8f8896d02b2a9dc657c6e0d01f9be.file.IndexIndex.html.php 中
+2015-06-15 23:56:05 103 行 [8] Uninitialized string offset: 0 在文件 /home/jinsong/Project/web/xmtables/Home/T_c/554cfb1d67a8f8896d02b2a9dc657c6e0d01f9be.file.IndexIndex.html.php 中
+2015-06-15 23:56:05 104 行 [8] Uninitialized string offset: 0 在文件 /home/jinsong/Project/web/xmtables/Home/T_c/554cfb1d67a8f8896d02b2a9dc657c6e0d01f9be.file.IndexIndex.html.php 中
+2015-06-15 23:56:05 105 行 [8] Uninitialized string offset: 0 在文件 /home/jinsong/Project/web/xmtables/Home/T_c/554cfb1d67a8f8896d02b2a9dc657c6e0d01f9be.file.IndexIndex.html.php 中
+2015-06-15 23:56:05 171 行 [8] Undefined index: pid 在文件 /home/jinsong/Project/web/Speek/Core/M.class.php 中
+2015-06-15 23:56:05 101 行 [8] Uninitialized string offset: 0 在文件 /home/jinsong/Project/web/xmtables/Home/T_c/554cfb1d67a8f8896d02b2a9dc657c6e0d01f9be.file.IndexIndex.html.php 中
+2015-06-15 23:56:05 102 行 [8] Uninitialized string offset: 0 在文件 /home/jinsong/Project/web/xmtables/Home/T_c/554cfb1d67a8f8896d02b2a9dc657c6e0d01f9be.file.IndexIndex.html.php 中
+2015-06-15 23:56:05 103 行 [8] Uninitialized string offset: 0 在文件 /home/jinsong/Project/web/xmtables/Home/T_c/554cfb1d67a8f8896d02b2a9dc657c6e0d01f9be.file.IndexIndex.html.php 中
+2015-06-15 23:56:05 104 行 [8] Uninitialized string offset: 0 在文件 /home/jinsong/Project/web/xmtables/Home/T_c/554cfb1d67a8f8896d02b2a9dc657c6e0d01f9be.file.IndexIndex.html.php 中
+2015-06-15 23:56:05 105 行 [8] Uninitialized string offset: 0 在文件 /home/jinsong/Project/web/xmtables/Home/T_c/554cfb1d67a8f8896d02b2a9dc657c6e0d01f9be.file.IndexIndex.html.php 中
+2015-06-15 23:56:05 171 行 [8] Undefined index: pid 在文件 /home/jinsong/Project/web/Speek/Core/M.class.php 中
+2015-06-15 23:56:05 101 行 [8] Uninitialized string offset: 0 在文件 /home/jinsong/Project/web/xmtables/Home/T_c/554cfb1d67a8f8896d02b2a9dc657c6e0d01f9be.file.IndexIndex.html.php 中
+2015-06-15 23:56:05 102 行 [8] Uninitialized string offset: 0 在文件 /home/jinsong/Project/web/xmtables/Home/T_c/554cfb1d67a8f8896d02b2a9dc657c6e0d01f9be.file.IndexIndex.html.php 中
+2015-06-15 23:56:05 103 行 [8] Uninitialized string offset: 0 在文件 /home/jinsong/Project/web/xmtables/Home/T_c/554cfb1d67a8f8896d02b2a9dc657c6e0d01f9be.file.IndexIndex.html.php 中
+2015-06-15 23:56:05 104 行 [8] Uninitialized string offset: 0 在文件 /home/jinsong/Project/web/xmtables/Home/T_c/554cfb1d67a8f8896d02b2a9dc657c6e0d01f9be.file.IndexIndex.html.php 中
+2015-06-15 23:56:05 105 行 [8] Uninitialized string offset: 0 在文件 /home/jinsong/Project/web/xmtables/Home/T_c/554cfb1d67a8f8896d02b2a9dc657c6e0d01f9be.file.IndexIndex.html.php 中
